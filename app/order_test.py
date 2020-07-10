@@ -58,9 +58,8 @@ try:
     browser.find_by_name("phone")[1].fill("0919999999")
     browser.find_by_name("address")[1].fill("58 Tố Hữu - Quận Nam Từ Liêm")
 
-    print(browser.find_by_id("select-region").value)
     element_region = browser.find_by_id("select-region").first  # Running version with 1 element
-    element_region.select_by_text("Hà Nội")
+    element_region.select("2")
 
     time.sleep(3)
 
